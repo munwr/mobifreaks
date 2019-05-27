@@ -1,0 +1,80 @@
+html {
+  font-family: sans-serif;
+}
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background: #FDFDF4;
+}
+a {
+  color: #80723C;
+}
+a:hover {
+  color: #4D4424;
+}
+.site-header {
+  background: #111;
+  color: #fff;
+  text-align: center;
+}
+a.site-logo {
+  display: inline-block;
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+  padding: 20px;
+}
+.site-logo span {
+  color: rgba(255,255,255,0.4);
+}
+.site-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.site-content-header h1 {
+  line-height: 1.3;
+}
+.site-content-header {
+  max-width: 720px;
+  line-height: 1.5;
+}
+.templates {
+  display: grid;
+  margin: 60px auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 60px;
+  grid-row-gap: 60px;
+}
+@media (min-width: 768px) {
+  .templates {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .templates {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.template h1 {
+  font-size: 18px;
+}
+.template .preview img {
+}
+.img-responsive {
+  max-width: 100%;
+}
+.template-actions {
+  padding-left: 16px;
+  line-height: 1.5;
+}
+
+a.netlify-link {
+  color: #2B9398;
+}
+a.netlify-link:hover {
+  color: #247B80;
+}
