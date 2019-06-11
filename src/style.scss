@@ -59,17 +59,29 @@ a.site-logo {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-.template h1 {
-  font-size: 18px;
+.template {
+  h1 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 6px;
+  }
 }
 .template .preview img {
+  border-radius: 10px;
 }
 .img-responsive {
   max-width: 100%;
 }
 .template-actions {
-  padding-left: 16px;
+  list-style: none;
+  font-size: 12px;
   line-height: 1.5;
+  margin-top: 0;
+  padding-left: 0;
+  li {
+    display: inline;
+    margin-right: 16px;
+  }
 }
 
 a.netlify-link {
