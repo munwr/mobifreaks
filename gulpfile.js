@@ -15,28 +15,24 @@ gulp.task('sass', function () {
   return gulp.src('./src/style.scss')
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(gulp.dest('./dist/css'))
-    .pipe(browserSync.stream())
 });
 
 gulp.task('minifyImages', () =>
   gulp.src('./src/images/*')
     .pipe(imagemin())
     .pipe(gulp.dest('dist/images'))
-    .pipe(browserSync.stream())
 );
 
 gulp.task('minifyHTML', () => {
   return gulp.src('./src/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('dist'))
-    .pipe(browserSync.stream())
 });
 
 gulp.task('minifyJS', function () {
   return gulp.src('./src/js/*/*.js')
     .pipe(terser())
     .pipe(gulp.dest('./dist/js'))
-    .pipe(browserSync.stream())
 });
 
 gulp.task('browser-sync', function() {
