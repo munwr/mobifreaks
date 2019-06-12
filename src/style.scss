@@ -65,9 +65,15 @@ a.site-logo {
     font-weight: 400;
     margin-bottom: 6px;
   }
+  &:hover .preview img {
+    box-shadow: 0 0px 1px rgba(0,0,0,0.3), 0 0px 30px rgba(0,0,0,0.2);
+    -webkit-filter: contrast(1);
+  }
 }
 .template .preview img {
   border-radius: 10px;
+  transition: box-shadow .3s linear;
+  box-shadow: 0 0px 1px rgba(0,0,0,0.3);
 }
 .img-responsive {
   max-width: 100%;
