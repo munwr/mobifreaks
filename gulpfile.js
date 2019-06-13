@@ -48,7 +48,7 @@ gulp.task('watch', function () {
   gulp.watch('./src/*.html', gulp.parallel(['minifyHTML']));
   gulp.watch('./src/images/*', gulp.parallel(['minifyImages']));
   gulp.watch('./src/js/*/*', gulp.parallel(['minifyJS']));
-  gulp.watch("./dist/*").on('change', browserSync.reload);
+  gulp.watch("./dist/*/*").on('change', browserSync.reload);
 });
 
 gulp.task('default', gulp.parallel('sass', 'minifyImages', 'minifyHTML', 'minifyJS', 'browser-sync', 'watch'));
