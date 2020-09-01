@@ -107,3 +107,40 @@ a.netlify-link:hover {
 footer.site-container p {
   padding: 0;
 }
+.promo-header {
+  background: rgb(14,18,4);
+  color: #D5DBC5;
+  text-align: center;
+  padding: 32px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.stackrole-logo {
+  display: inline-block;
+  background: url('/images/logo-nocircle.svg') no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 30px;
+  position: relative;
+  img {
+    width: 23px;
+    height: 23px;
+    max-width: 100%;
+    position: absolute;
+    right: 48px;
+    bottom: .5px;
+    animation: spinner 6s cubic-bezier(.68,-0.55,.27,1.55) infinite;
+    animation-delay: 1s;
+    // @media (max-width: 1024px) {
+    //   bottom: 4px;
+    // }
+  }
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    50%, 100% {
+      transform: rotate(720deg);
+    }
+  }
+}
